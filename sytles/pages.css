@@ -1,0 +1,19 @@
+body {
+    gap: 1em;
+    font-size: 1.25em;
+}
+
+h3 {
+    color: var(--yellow);
+}
+
+button {
+    background-color: transparent;
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+}
+
+button:hover {
+    background-color: var(--yellow);
+    color: var(--bg);
+}
