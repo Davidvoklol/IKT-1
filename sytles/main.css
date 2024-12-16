@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+    --bg: #19282F;
+    --fg: #559e62;
+    --highlight: #B33030;
+    --yellow: #eec319;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition-duration: 100ms;
+}
+
+.fancy {
+    font-family: "Borel", cursive;
+}
+
+.normal {
+    font-family: "Varela Round", serif;
+}
+
+body, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+    padding: 1em;
+    gap: 3em;
+
+    font-weight: 400;
+    font-family: "Varela Round", serif;
+
+    color: var(--fg);
+    background-color: var(--bg);
+
+    overflow-x: hidden;
+}
+
+main {
+    gap: 2em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 400%;
+    font-weight: 900;
+}
+
+h2 {
+    color: var(--highlight);
+}
+
+.snowy {
+    color: var(--highlight);
+    background: linear-gradient(to top, var(--highlight) 60%, #e0e0e0 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#SnowCanvas {
+    position: absolute;
+    background-color: transparent;
+    pointer-events: none;
+    top: 0;
+    z-index: -1;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.tree{
+    width: 50vw;
+}
+
+.presents {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+    padding: .5em 1.5em;
+    background-color: transparent;
+    color: var(--bg);
+    border: 2px solid var(--bg);
+    font-weight: 900;
+    border-radius: .25em;
+}
+
+button:hover {
+    background-color: var(--bg);
+    color: var(--yellow);
+}
+
+/* width */
+::-webkit-scrollbar {
+    min-width: 10px;
+    width: 1vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: var(--fg);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--highlight);
+}
