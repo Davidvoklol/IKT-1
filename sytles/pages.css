@@ -11,9 +11,37 @@ button {
     background-color: transparent;
     color: var(--yellow);
     border: 2px solid var(--yellow);
+
 }
 
 button:hover {
     background-color: var(--yellow);
     color: var(--bg);
+}
+
+div{
+    margin-inline: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(22, 41, 41) ;
+    color: var(--fg);
+
+
+}
+p{
+    font-family: "Varela Round", serif;
+}
+
+h3{
+    padding: 10px;
+    font-size: 170%;    
+    margin-bottom: 1em;
+    font-style: italic;
+    background-color: rgb(49, 51, 29) ;
+    box-shadow: 0 0 20px 15px rgb(49, 51, 29);
+
 }
